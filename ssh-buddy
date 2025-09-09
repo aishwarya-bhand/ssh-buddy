@@ -1,4 +1,5 @@
 #!/bin/bash
+
 function args(){
         c_ips="compute_ips.txt"
         #[[ -e ${c_ips} ]] && readarray -t ips < ${c_ips} || exit 127
