@@ -1,8 +1,6 @@
 #!/bin/bash
-
 function args(){
         c_ips="compute_ips.txt"
-        #[[ -e ${c_ips} ]] && readarray -t ips < ${c_ips} || exit 127
         if [[ -e ${c_ips} ]] && [[ -f ${c_ips} ]];then
                 readarray -t ips < ${c_ips}
         else
